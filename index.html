@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Davide Pichler</title>
+    <meta name="description" content="Davide Pichler AI persona demo - An AI Agent substituting his personal website, answering questions about CV, projects, interests and backgound!"/>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+      
+<body>
+    
+
+    <div class="chat-container">
+   
+      <div class="chat-messages" id="chat-box">
+        <div class="chat-header">
+            <img src="assets/dp.jpg" alt="Avatar" class="chat-avatar" />
+            <div class="chat-prompt">👋🏼 Hi! I am Davide Pichler <span class="ai-persona">AI Persona</span> demo</div>
+            <div class="chat-subprompt">Ask me anything about my CV, background or projects</div>
+          </div>
+      </div>
+      
+      <div class="chat-bottom" id="chat-bottom">
+        <form class="chat-input" id="chat-form">
+          <textarea id="user-input" maxlength="200" placeholder="Ask me anything..." autocomplete="off" required rows="1"></textarea>
+          <button type="submit" class="icon send" aria-label="Send">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="4" y1="12" x2="14" y2="12" stroke="#232946" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 6L20 12L14 18" stroke="#232946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+                   
+        </form>
+        <div class="char-counter" id="char-counter">0/100</div>
+        <div class="suggestions" id="suggestions">
+          <div class="suggestion">How does it work?</div>
+          <div class="suggestion">Background</div>
+          <div class="suggestion">Education</div>
+          <div class="suggestion">Projects</div>
+          <div class="suggestion">Skills</div>
+          <div class="suggestion">Contacts</div>
+          <div class="suggestion">A funny story</div>
+          <div class="suggestion">Tell me about your youth</div>
+          <div class="suggestion">What are your hobbies?</div>
+          <div class="suggestion">Are you a good-fit for a satrtup incubator?;)</div>
+
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
