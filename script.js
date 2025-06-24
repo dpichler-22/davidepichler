@@ -6,7 +6,7 @@ const suggestions = document.querySelectorAll('.suggestion');
 
 
 // Ping the backend when the page loads to wake it up
-fetch('http://127.0.0.1:5000/ping')
+fetch('https://davidepichler-backend.onrender.com/ping')
   .then(res => res.json())
   .then(data => {
     console.log('Backend awake:', data.status);
@@ -65,7 +65,7 @@ if (chatForm) {
     autoResizeTextarea();
 
     // Send to Flask backend
-    fetch('http://127.0.0.1:5000/chat', {
+    fetch('https://davidepichler-backend.onrender.com/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
