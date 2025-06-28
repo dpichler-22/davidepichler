@@ -3,7 +3,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background: #f7fafd;
+  background: linear-gradient(120deg, #f7fafd 0%, #eaf6ff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,11 +15,7 @@ body {
     background: linear-gradient(130deg, #00eaff 0%, #7f7fff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-shadow: 0 0 3px #00eaff44, 0 0 1.5px #7f7fff33;
     font-family: 'Plus Jakarta Sans', 'Manrope', Arial, sans-serif;
-    padding: 0 0.25em;
     border-radius: 0.25em;
   }
   
@@ -93,6 +89,8 @@ body {
 .chat-messages::-webkit-scrollbar {
   display: none;
 }
+
+
 
 .chat-bottom {
   width: 100%;
@@ -286,7 +284,12 @@ button.icon.send {
 }
 
  
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
     .chat-container,
     .chat-messages {
       max-width: 100vw;
@@ -295,11 +298,12 @@ button.icon.send {
     }
 
     .chat-messages {
-        height: 80vh;
+        height: 75vh;
+        padding-bottom: 5px;
       }
 
     .chat-bottom {
-        margin-bottom: -50px;
+        margin-bottom: -20px;
       }
 
 
@@ -308,8 +312,8 @@ button.icon.send {
       }
 
     .chat-container{
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
     .chat-bottom,
     .chat-input {
@@ -331,14 +335,16 @@ button.icon.send {
     }
 
     .chat-avatar {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
     }
     .chat-prompt {
-      font-size: 1.1rem;
+      font-size: 1.7rem;
+      padding: 0 35px 0 35px;
     }
     .chat-subprompt {
       font-size: 0.95rem;
+      padding: 0 10px 0 10px;
     }
     .message.user,
     .message.bot {
@@ -356,6 +362,3 @@ button.icon.send {
       font-size: 1.2rem;
     }
   }
-
-
-
