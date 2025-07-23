@@ -348,8 +348,11 @@ button.icon.send {
         padding-bottom: 10px;
       }
 
-    .chat-bottom {
+      .chat-bottom {
         margin-bottom: -20px;
+        margin-left: 0;
+        position: relative;
+        left: -5px;
       }
 
 
