@@ -21,7 +21,12 @@ function appendMessage(text, sender) {
   if (!chatBox) return;
   const msg = document.createElement('div');
   msg.className = 'message ' + sender;
-  msg.textContent = text;
+
+  const rawHTML = marked.parse(text);
+  const cleanHTML = DOMPurify.sanitize(rawHTML);
+
+  msg.innerHTML = cleanHTML;  // Render sanitized HTML
+
   chatBox.appendChild(msg);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
