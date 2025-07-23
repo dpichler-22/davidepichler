@@ -299,6 +299,31 @@ button.icon.send {
 }
 
 
+
+.message.bot p,
+.message.user p {
+  margin: 0.2em 0;  /* reduce vertical margin of paragraphs */
+  line-height: 1.4; /* tweak line height if needed */
+}
+
+.message.bot ul,
+.message.user ul,
+.message.bot ol,
+.message.user ol {
+  margin: 0.2em 0 0.2em 1.2em; /* reduce list margins and add indent */
+  padding-left: 0;
+}
+
+.message.bot code,
+.message.user code {
+  font-family: monospace;
+  background-color: #f0f0f0;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+
+
  
 @media (max-width: 1024px) {
   html, body {
