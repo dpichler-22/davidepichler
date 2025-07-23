@@ -311,7 +311,7 @@ button.icon.send {
 .message.bot ol,
 .message.user ol {
   margin: 0.2em 0 0.2em 0.2em; 
-  padding-left: 5px;
+  padding-left: 12px;
 }
 
 .message.bot code,
@@ -325,7 +325,7 @@ button.icon.send {
 .message p:last-child,
 .message ul:last-child,
 .message ol:last-child {
-  margin-bottom: -2px; 
+  margin-bottom: -4px; 
 }
 
 
