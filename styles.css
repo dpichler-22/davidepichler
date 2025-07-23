@@ -367,7 +367,7 @@ button.icon.send {
     .chat-bottom,
     .chat-input {
       max-width: 100vw;
-      width: 95vw;
+      width: 96vw;
       margin: auto;
       box-sizing: border-box;
     }
