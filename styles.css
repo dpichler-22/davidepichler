@@ -302,7 +302,7 @@ button.icon.send {
 
 .message.bot p,
 .message.user p {
-  margin: 0.2em 0;  /* reduce vertical margin of paragraphs */
+  margin: 0;  /* reduce vertical margin of paragraphs */
   line-height: 1.4; /* tweak line height if needed */
 }
 
