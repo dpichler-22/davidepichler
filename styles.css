@@ -269,7 +269,7 @@ button.icon.send {
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
-  backdrop-filter: blur(4px); /* optional glassy feel */
+  backdrop-filter: blur(4px);
   border-radius: 12px;
 }
 
@@ -302,15 +302,15 @@ button.icon.send {
 
 .message.bot p,
 .message.user p {
-  margin: 0;  /* reduce vertical margin of paragraphs */
-  line-height: 1.4; /* tweak line height if needed */
+  margin: 0;  
+  line-height: 1.4;
 }
 
 .message.bot ul,
 .message.user ul,
 .message.bot ol,
 .message.user ol {
-  margin: 0.2em 0 0.2em 0.2em; /* reduce list margins and add indent */
+  margin: 0.2em 0 0.2em 0.2em; 
   padding-left: 5px;
 }
 
@@ -325,7 +325,7 @@ button.icon.send {
 .message p:last-child,
 .message ul:last-child,
 .message ol:last-child {
-  margin-bottom: 0;  /* remove bottom margin on last child */
+  margin-bottom: -2px; 
 }
 
 
